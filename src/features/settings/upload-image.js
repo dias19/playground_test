@@ -103,7 +103,7 @@ export function UploadImage() {
                 src={URL.createObjectURL(image)}
                 alt="uploaded image"
                 width={200}
-                height={100}
+                height={75}
                 className="rounded-full"
                 objectFit="contain"
               />

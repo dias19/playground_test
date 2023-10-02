@@ -77,7 +77,7 @@ export function RegistrationForm() {
   };
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-4">
       <FormInput
         label="Ваша почта"
         value={formValues.email}
@@ -106,10 +106,10 @@ export function RegistrationForm() {
         }
       />
       <div className="space-y-6">
-        <div className="flex items-baseline gap-4">
+        <div className="flex items-baseline gap-10">
           <input
             type="checkbox"
-            className="w-5 h-5"
+            className="w-10 h-10"
             value={formValues.isPrivacyAccepted}
             onChange={(e) =>
               setFormValues({
