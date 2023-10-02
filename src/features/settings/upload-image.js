@@ -20,15 +20,9 @@ export function UploadImage() {
 
   const [image, setImage] = useState(null);
 
-  const { data, error, isLoading, mutate } = useSWR("/account/image", (url) =>
+  const { data, isLoading, mutate } = useSWR("/account/image", (url) =>
     fetcher(url, token)
   );
-
-  useEffect(() => {
-    if (error) {
-      router.push("/");
-    }
-  }, [error]);
 
   const handleUpload = async (e) => {
     if (!e.target.files) return;
