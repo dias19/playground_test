@@ -2,7 +2,7 @@ import { navItems } from "~/constants";
 
 export function BottomNavigation() {
   return (
-    <nav className="fixed bottom-0 grid grid-cols-4 h-bottomNav w-full rounded-t-[10px] bg-gradient-to-r from-transparent via-transparent to-blue-100 shadow-bottomNav px-10">
+    <nav className="fixed bottom-0 grid grid-cols-4 h-bottomNav w-full rounded-t-[10px] bg-gradient-to-r from-transparent via-transparent to-blue-100 shadow-bottomNav px-10 z-[10]">
       {navItems.map((NavItem) => (
         <div
           key={NavItem.id}

@@ -10,7 +10,7 @@ export function Button({ type, children, onClick, className }) {
 
   return (
     <button
-      className={`h-button rounded-button w-full text-white text-sm font-bold ${className}`}
+      className={`h-button rounded-button w-full text-sm font-bold ${className} text-white`}
       style={{
         backgroundImage: `${styles}`,
       }}
